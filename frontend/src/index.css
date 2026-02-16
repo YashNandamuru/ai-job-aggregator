@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-surface: #f7fafc;
+  --bg-muted: #eef4ff;
+  --text-primary: #0f172a;
+  --text-muted: #475569;
+  --ring-focus: #2563eb;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
+  background: radial-gradient(circle at 8% 8%, #dbeafe 0%, transparent 34%),
+    radial-gradient(circle at 92% 12%, #d1fae5 0%, transparent 36%),
+    var(--bg-surface);
+  color: var(--text-primary);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e2e8f0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+button,
+a,
+input,
+select {
+  transition-property: background-color, border-color, color, box-shadow, transform;
+  transition-duration: 180ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-spin,
+.animate-ping,
+.animate-pulse {
+  transition: none;
+}
