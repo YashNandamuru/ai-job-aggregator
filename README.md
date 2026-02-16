@@ -230,4 +230,4 @@ MIT
 
 ## Author
 
-Built for the [Web Agents Hackathon](https://github.com/tinyfish-io/tinyfish-cookbook) by TinyFish.
+Yashwanth Bharadwaj Nandamuru
